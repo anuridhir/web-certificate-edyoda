@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/6e400fc671.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Indian Premier League (IPL)</title>
+    <style>
+      body {
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTONS0gnFHK-J1rlvdbc2db7Dq1zFn5Wckj76F8_fHL5eTtE2HRcJ0gO9l1O0R9oWf7LP4&usqp=CAU");
+      }
+      #test{
+            display: grid ;
+            grid: 500px/ auto auto auto auto;
+        }
+        header{
+            position: fixed;
+            background-color: white;
+            display: flex;
+            height: 120px;
+            width: 100%;
+        }
+        #headLogo{
+            width: 150px;
+            height: 80px;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+        .d-flex{
+            padding: 30px 0 30px 262px;
+            /* width: 150px; */
+            margin-left: 60px;
+            margin-top: 10px;
+        }
+        #heading{
+            /* padding-top: 18px;
+            padding-left: 190px; */
+            margin-left: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(219, 69, 5);
+            font-weight: bolder;
+            font-size: 20px;
+            letter-spacing: 1px;
+            margin-top: 45px;
+        }
+        #create-btn{
+            margin: 25px 100px 25px 180px;
+            border-radius: 10px;
+            background-color: rgb(207, 60, 85);
+            padding: 7px;
+            color: white;
+            border: none;
+            margin-left: 300px;
+        }
+        #create-btn:hover{
+            background-color: rgb(219, 69, 5);
+            padding: 7px;
+            /* margin-left: 178px;
+            margin-right: 97px; */
+        }
+        section{
+            padding-top: 150px;
+            padding-bottom: 80px;
+        }
+      
+      /* for footer */
+      footer {
+        display: flex;
+
+        justify-content: space-around;
+        box-sizing: border-box;
+        font-family: "Montserrat", sans-serif;
+        background-color: #fff;
+        text-decoration: none;
+        margin-top: 50px;
+        list-style-type: none;
+      }
+
+      footer a {
+        color: rgb(219, 69, 5);
+        list-style: none;
+        list-style-type: none;
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        background-color: rgb(224, 101, 74);
+        color: #fff;
+      }
+      footer ul {
+        text-decoration: none;
+
+        margin-top: 60px;
+        margin-bottom: 60px;
+        list-style-type: none;
+      }
+
+      .footer-head {
+        font-family: "Montserrat", sans-serif;
+        font-size: 25px;
+        margin-bottom: 15px;
+        font-weight: 500;
+        color: rgb(32, 32, 95);
+      }
+
+      footer li {
+        margin-top: 8px;
+        text-decoration: none;
+        font-size: 17px;
+        font-weight: lighter;
+        color: rgb(219, 69, 5);
+      }
+
+      .nav-bar {
+color: black;
+justify-items: center;
+margin-top: 40px;
+margin-left: 90px;
+
+
+}
+.nav-bar-a{
+    margin-top: 45px;
+color: rgb(22, 22, 52);
+margin-left: 70px;
+font-size: 17px;
+text-decoration: none;
+
+}
+.nav-bar-a:hover{
+  color: rgb(219, 69, 5);
+
+    text-decoration: underline;
+}
+#search{
+margin-left: 100px;
+
+}
+.bt{
+  margin-top: -90px;
+  /* margin-left: 350px; */
+}
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- <div> -->
+      <img
+        id="headLogo"
+        src="https://1000logos.net/wp-content/uploads/2022/08/Indian-Premier-League-Logo-color.png"
+        alt="ipl logo"
+      />
+      <h1 id="heading">Indian Premier League Cricket</h1>
+      <div class="nav-bar">
+        <a class="nav-bar-a" href="">Home</a>
+        <a class="nav-bar-a" href="news.html">News</a>
+      </div>
+      <div>
+        <form class="d-flex" role="search">
+          <input id="search" class="form-control me-2" type="search" placeholder="Search Team with ID (CSK, MI)" aria-label="Search">
+      </form>
+      <div class="bt">
+      <button onclick="location.href='Create.html'" id="create-btn">
+        Create Team
+      </button>
+    </div>
+    </header>
+    <section>
+      <div id="test"></div>
+      <script src="home.js"></script>
+    </section>
+
+    <footer>
+      <ul class="online-store">
+        <li><h3 class="footer-head">CRICKET STUFF</h3></li>
+        <li style="color: #fff"><a href="#">Cricket Bats</a></li>
+        <li><a href="#">Cricket Kitbags</a></li>
+        <li><a href="#">Cricket Gloves</a></li>
+        <li><a href="#">Cricket Hetmets</a></li>
+      </ul>
+      <ul class="helpful-links">
+        <li><h3 class="footer-head">HELPFUL LINKS</h3></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Teams</a></li>
+      </ul>
+      <ul class="patners" style="color: #fff">
+        <li><h3 class="footer-head">TEAM SPONSOR</h3></li>
+        <li><a href="#">Dream11</a></li>
+        <li><a href="#">Hyundai</a></li>
+        <li><a href="#">MPL Sports</a></li>
+        <li><a href="#">Ambuja Cement</a></li>
+        <li><a href="#">Mastercard</a></li>
+      </ul>
+      <ul class="address">
+        <li><h3 class="footer-head">HEADQUARTER</h3></li>
+        <li>Cricket centre,</li>
+        <li>Wankhede</li>
+        <li>Stadium</li>
+        <li>in Mumbai</li>
+      </ul>
+    </footer>
+  </body>
+</html>

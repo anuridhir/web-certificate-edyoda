@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mumbai Indians</title>
+    <style>
+      body {
+        background-color: #2379d5;
+      }
+      #container {
+        padding-top: 80px;
+        display: grid;
+        grid: 700px / auto auto auto;
+        grid-gap: 30px;
+      }
+      header {
+        color: white;
+      }
+      .icon {
+        width: 100px;
+        height: 100px;
+        padding-left: 300px;
+      }
+      .align {
+        display: flex;
+      }
+      .ans {
+        padding-left: 250px;
+        padding-top: 20px;
+      }
+      .qes {
+        padding-left: 400px;
+        padding-top: 20px;
+      }
+      .back-home {
+        position: absolute;
+        padding: 10px;
+        background-color: rgb(17, 70, 70);
+        border: none;
+        color: #fff;
+
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .back-home:hover {
+        opacity: 0.1s;
+        transition: 0.02;
+        background-color: cadetblue;
+        padding: 20px;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      /* for footer */
+      footer {
+        display: flex;
+
+        justify-content: space-around;
+        box-sizing: border-box;
+        font-family: "Montserrat", sans-serif;
+        background-color: #fff;
+        text-decoration: none;
+        margin-top: 50px;
+        list-style-type: none;
+      }
+
+      footer a {
+        color: rgb(219, 69, 5);
+        list-style: none;
+        list-style-type: none;
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        background-color: rgb(224, 101, 74);
+        color: #fff;
+      }
+      footer ul {
+        text-decoration: none;
+
+        margin-top: 60px;
+        margin-bottom: 60px;
+        list-style-type: none;
+      }
+
+      .footer-head {
+        font-family: "Montserrat", sans-serif;
+        font-size: 25px;
+        margin-bottom: 15px;
+        font-weight: 500;
+        color: rgb(32, 32, 95);
+      }
+
+      footer li {
+        margin-top: 8px;
+        text-decoration: none;
+        font-size: 17px;
+        font-weight: lighter;
+        color: rgb(219, 69, 5);
+      }
+      /* Footer ends */
+    </style>
+  </head>
+  <body>
+    <a href="home.html"><button class="back-home">Back to Home</button></a>
+    <header>
+      <div class="align">
+        <h2 class="qes">Team Name</h2>
+        <h1 class="ans">Mumbai Indians</h1>
+      </div>
+      <div class="align">
+        <h2 class="qes">Team Icon</h2>
+        <img
+          class="icon"
+          src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/MI/Logos/Roundbig/MIroundbig.png"
+        />
+      </div>
+      <div class="align">
+        <h2 class="qes">Player Count</h2>
+        <h1 style="padding-left: 300px" class="ans">11</h1>
+      </div>
+      <div class="align">
+        <h2 class="qes">Top Batsman</h2>
+        <h1 class="ans">Rohit Sharma</h1>
+      </div>
+      <div class="align">
+        <h2 class="qes">Top Bowler</h2>
+        <h1 class="ans">Jasprit Bumrah</h1>
+      </div>
+      <div class="align">
+        <h2 class="qes">Championship Won Count</h2>
+        <h1 style="padding-left: 170px" class="ans">5</h1>
+      </div>
+    </header>
+    <div id="container"></div>
+    <script src="MI.js"></script>
+    <footer>
+      <ul class="online-store">
+        <li><h3 class="footer-head">CRICKET STUFF</h3></li>
+        <li style="color: #fff"><a href="#">Cricket Bats</a></li>
+        <li><a href="#">Cricket Kitbags</a></li>
+        <li><a href="#">Cricket Gloves</a></li>
+        <li><a href="#">Cricket Hetmets</a></li>
+      </ul>
+      <ul class="helpful-links">
+        <li><h3 class="footer-head">HELPFUL LINKS</h3></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Teams</a></li>
+      </ul>
+      <ul class="patners" style="color: #fff">
+        <li><h3 class="footer-head">TEAM SPONSOR</h3></li>
+        <li><a href="#">Dream11</a></li>
+        <li><a href="#">Hyundai</a></li>
+        <li><a href="#">MPL Sports</a></li>
+        <li><a href="#">Ambuja Cement</a></li>
+        <li><a href="#">Mastercard</a></li>
+      </ul>
+      <ul class="address">
+        <li><h3 class="footer-head">HEADQUARTER</h3></li>
+        <li>Cricket centre,</li>
+        <li>Wankhede</li>
+        <li>Stadium</li>
+        <li>in Mumbai</li>
+      </ul>
+    </footer>
+  </body>
+</html>
